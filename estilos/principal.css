@@ -2,20 +2,21 @@
 
 :root {
     --cor0: #5e2c82;
-    --cor1: #4fb0ac;
-    --cor2: #499f9c;
-    --cor3: #2d6462;    
+    --cor1: #94cfcd;
+    --cor2: #4fb0ac;
+    --cor3: #499f9c;
+    --cor4: #2d6462;  
+    --cor6: #6cd3cf;  
 }
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
     background-color: var(--cor0);
-    text-align: center;
 }
 #principal {
     height: 100vh;
@@ -40,11 +41,64 @@ body {
     border-top-right-radius: 20px;
 }
 .dois h1 {
-    padding: 20px;
-    padding-bottom: 10px;
+    padding: 12px;
+    text-align: center;
 }
 .saudacao {
-    text-align: justify;
-    padding: 10px;
-    font-size: 0.9em;
+    font-size: 13px;
+    margin: 0px 10px;
+    line-height: 1.3em;   
+}
+p.login-senha {
+    background-color: var(--cor0);
+    height: 40px;
+    margin: 5px 10px;
+    padding: 2px 3px 2.5px;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#icone {
+    color: white;
+    font-size: 2em;
+    margin: auto 7px auto 5px;
+}
+.login-senha input {
+    background-color: var(--cor1);
+    border: unset;
+    align-self: stretch;
+    flex-grow: 1;
+    border-radius: 8px;
+    outline: unset;
+    text-indent: 5px;
+    font-size: 1em;
+}
+.login-senha input:focus {
+    background-color: white;
+}
+.botao {
+    display: block;
+    margin: auto;    
+    height: 40px;    
+    border-radius: 6px;
+    width: 230px;
+    border: unset;
+    font-size: 1em;
+}
+.entrar {
+    color: white;
+    background-color: var(--cor2);
+}
+.entrar:hover {
+    background-color: var(--cor4);
+}
+.esqueci {
+    margin-top: 5px;
+    border: 1px solid var(--cor2);
+    color: var(--cor4);
+}
+.esqueci:hover {
+    background-color: var(--cor6);
 }
