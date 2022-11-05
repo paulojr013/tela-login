@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #5e2c82;
+    --cor1: #94cfcd;
+    --cor2: #4fb0ac;
+    --cor3: #499f9c;
+    --cor4: #2d6462;  
+    --cor6: #6cd3cf;  
+}
+
+body {
+    background-image: linear-gradient(to top, var(--cor2), var(--cor0));
+}
+
+
+.meiotela {    
+    height: 280px;
+    width: 620px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.um {
+    width: 50%;
+    height: auto;
+    align-self: stretch;  
+    border-radius: 20px 0px 0px 20px;
+}
+.botao {   
+    width: 405px;
+}
