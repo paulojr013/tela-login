@@ -29,3 +29,9 @@ body {
 .botao {   
     width: 405px;
 }
+
+@media (min-width: 1200px) {
+    body {
+        background-color: #2d6462;
+    }
+}
