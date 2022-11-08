@@ -8,30 +8,49 @@
     --cor4: #2d6462;  
     --cor6: #6cd3cf;  
 }
+@media (min-width: 766px) and (max-width: 1199px) {
 
-body {
-    background-image: linear-gradient(to top, var(--cor2), var(--cor0));
-}
-
-
-.meiotela {    
-    height: 280px;
-    width: 620px;
-    display: flex;
-    flex-flow: row nowrap;
-}
-.um {
-    width: 50%;
-    height: auto;
-    align-self: stretch;  
-    border-radius: 20px 0px 0px 20px;
-}
-.botao {   
-    width: 405px;
-}
-
-@media (min-width: 1200px) {
     body {
-        background-color: #2d6462;
+        background-image: linear-gradient(to top, var(--cor2), var(--cor0));
     }
+
+    .meiotela {    
+        height: 280px;
+        width: 85%;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .um {
+        width: 50%;
+        height: auto;
+        align-self: stretch;  
+    }
+}
+@media (min-width: 1200px) {
+
+    body {
+        background-image: linear-gradient(to top, var(--cor2), var(--cor0));
+    }
+
+    .meiotela {    
+        height: 350px;
+        width: 950px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .saudacao {
+        font-size: 16px;
+        margin: 5px 0px 15px;
+        line-height: 1.4em;
+    }   
+    .um {
+        width: 85%;
+        height: auto;
+        align-self: stretch;  
+        order: 1;
+    }
+
 }

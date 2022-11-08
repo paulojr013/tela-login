@@ -32,13 +32,17 @@ body {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.418);
+    overflow: hidden;
+    transition: width .4s, height .4s;
+    transition-timing-function: ease;
 }
 .um {
     height: 40%;
     background: black url(../imagens/back-phone.jpg) center center no-repeat scroll;
     background-size: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+}
+.dois {
+    padding: 0px 10px;
 }
 .dois h1 {
     padding: 12px;
@@ -46,13 +50,12 @@ body {
 }
 .saudacao {
     font-size: 13px;
-    margin: 0px 10px;
     line-height: 1.3em;   
 }
 p.login-senha {
     background-color: var(--cor0);
     height: 40px;
-    margin: 5px 10px;
+    margin-top: 5px;
     padding: 2px 3px 2.5px;
     border-radius: 8px;
     display: flex;
@@ -60,9 +63,8 @@ p.login-senha {
     justify-content: space-between;
     align-items: center;
 }
-#icone {
+.material-icons {    
     color: white;
-    font-size: 2em;
     margin: auto 7px auto 5px;
 }
 .login-senha input {
@@ -78,12 +80,14 @@ p.login-senha {
 .login-senha input:focus {
     background-color: white;
 }
-.botao {
-    display: block;
-    margin: auto;    
+.botao-flex {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.botao {   
+    margin: 5px 0px 0px;
     height: 40px;    
     border-radius: 6px;
-    width: 230px;
     border: unset;
     font-size: 1em;
 }
@@ -95,9 +99,9 @@ p.login-senha {
     background-color: var(--cor4);
 }
 .esqueci {
-    margin-top: 5px;
     border: 1px solid var(--cor2);
     color: var(--cor4);
+    background-color: white;
 }
 .esqueci:hover {
     background-color: var(--cor6);
