@@ -5,16 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/mobile-first.css">
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style.css" media="screen and (min-width: 767px)">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
-
     <title>Tela de Login Responsiva</title>
+    <style>
+        .material-icons {    
+        color: white;
+        font-size: 1.8em;
+        margin-top: 5px;
+        }
+    </style>
 </head>
 <body>
-    <main id="principal">
-        <section class="meiotela">
-            <div class="bloco um"></div>
-            <div class="bloco dois">
+    <main id="container">
+        <section class="telalogin">
+            <div class="bloco-imagem"></div>
+            <div class="bloco-form">
                 <h1>Login</h1>
                 <p class="saudacao">Seja bem-vindo(a)  novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente. </p>
 
@@ -36,7 +42,7 @@
                     </label>
                     <input type="password" name="senha" id="isenha"  placeholder="sua senha" required autocomplete="current-password" minlength="8" maxlength="16">
                 </p>
-                <p class="botao-flex">
+                <p>
                     <input type="submit" value="Entrar" class="botao entrar">
                     <input type="button" value="Esqueci a Senha" class="botao esqueci">
                 </p>
